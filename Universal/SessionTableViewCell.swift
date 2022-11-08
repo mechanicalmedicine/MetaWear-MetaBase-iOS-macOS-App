@@ -19,6 +19,9 @@ class SessionTableViewCell: UITableViewCell {
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var shareActivity: UIActivityIndicatorView!
     
+    @IBOutlet weak var plotButton: UIButton!
+    var plotFiles: [Array<URL>.Element]!
+    
     var parentController: UIViewController!
     var models: [SessionModel]! {
         didSet {
@@ -26,6 +29,13 @@ class SessionTableViewCell: UITableViewCell {
             timeAgoLabel.text = models.first!.started.timeAgo()
         }
     }
+    
+    @IBAction func plotPressed(_ sender: Any) {
+        plotButton.isEnabled = false
+        plotFiles = self.models.flatMap { $0.files.map { $0.csvFilename.documentDirectoryUrl } }
+        
+    }
+    
     
     @IBAction func sharePressed(_ sender: Any) {
         shareButton.isEnabled = false

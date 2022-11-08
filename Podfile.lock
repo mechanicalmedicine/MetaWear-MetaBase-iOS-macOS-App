@@ -1,6 +1,6 @@
 PODS:
   - Bolts-Swift (1.5.0)
-  - DeviceKit (4.5.2)
+  - DeviceKit (4.6.0)
   - HexColors (4.0.0)
   - iOSDFULibrary (4.11.1):
     - ZIPFoundation (= 0.9.11)
@@ -49,7 +49,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Bolts-Swift: afbbaf8c8186e7f769be4afa656949c14087ba44
-  DeviceKit: c622fc19f795f3e0b4d75d6d11b26604338cdab3
+  DeviceKit: 834dd8aa1be53cd85364d8f49aa5d98bfac397c4
   HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
   iOSDFULibrary: 3500ac00451aa7d8ec48a752e91099669a2c1d27
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
@@ -62,4 +62,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 6f9acd6b8a8a20a49d3eb3e46711e8137ea5b41c
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

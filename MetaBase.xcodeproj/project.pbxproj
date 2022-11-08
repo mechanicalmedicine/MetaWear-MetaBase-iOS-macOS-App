@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34379865280CD2D600F21D2D /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34379864280CD2D600F21D2D /* PlotViewController.swift */; };
+		34379867280DDD0E00F21D2D /* PlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34379866280DDD0E00F21D2D /* PlotModel.swift */; };
 		4003F483200953CB00C7C5E2 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4003F482200953CB00C7C5E2 /* State.swift */; };
 		401355A3200C4C12002BF5EA /* Accelerometer.csv in Resources */ = {isa = PBXBuildFile; fileRef = 401355A2200C4C12002BF5EA /* Accelerometer.csv */; };
 		401355A4200C4C1D002BF5EA /* Accelerometer.csv in Resources */ = {isa = PBXBuildFile; fileRef = 401355A2200C4C12002BF5EA /* Accelerometer.csv */; };
@@ -96,6 +98,8 @@
 		257E749125A0B6718CD4EDC9 /* Pods-MetaWear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaWear.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetaWear/Pods-MetaWear.debug.xcconfig"; sourceTree = "<group>"; };
 		2C6DD25E55C544683907BA0A /* Pods-MetaBaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaBaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetaBaseTests/Pods-MetaBaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		330E58CBB7DC6C06D7025A92 /* Pods_MetaBaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetaBaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34379864280CD2D600F21D2D /* PlotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotViewController.swift; sourceTree = "<group>"; };
+		34379866280DDD0E00F21D2D /* PlotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotModel.swift; sourceTree = "<group>"; };
 		4003F482200953CB00C7C5E2 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		401355A2200C4C12002BF5EA /* Accelerometer.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Accelerometer.csv; sourceTree = "<group>"; };
 		401355A5200D2ABE002BF5EA /* Accelerometer50K.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Accelerometer50K.csv; sourceTree = "<group>"; };
@@ -321,6 +325,8 @@
 				40B0D3051FB2AE3D002D828F /* MetaBaseAssets.xcassets */,
 				4042717B1C61882E00059C22 /* Info.plist */,
 				40B0D3031FB2386B002D828F /* MetaBaseLaunchScreen.storyboard */,
+				34379864280CD2D600F21D2D /* PlotViewController.swift */,
+				34379866280DDD0E00F21D2D /* PlotModel.swift */,
 			);
 			path = MetaBase;
 			sourceTree = "<group>";
@@ -498,11 +504,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1230;
-				ORGANIZATIONNAME = "MBIENTLAB, INC";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					4042716B1C61882E00059C22 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = S2273LZ6GL;
+						DevelopmentTeam = FJCERUY4EM;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -751,6 +757,7 @@
 				40477F962011BF9300E05FF4 /* NameSelector.swift in Sources */,
 				40FE319B2017255400A956AC /* SavedMetaWears.swift in Sources */,
 				4087F4532063591C00F7638F /* CaptureTableViewCell.swift in Sources */,
+				34379865280CD2D600F21D2D /* PlotViewController.swift in Sources */,
 				40477F512011856600E05FF4 /* DeviceDetailViewController.swift in Sources */,
 				407CF2582009C0EB00430119 /* DownloadProgress.swift in Sources */,
 				40DBC3BA2036151700C20F7E /* MainTableViewCell.swift in Sources */,
@@ -779,6 +786,7 @@
 				4046A29F1FAC3084005C1C47 /* Shipment.swift in Sources */,
 				404271981C654D0400059C22 /* ConfigTableViewCell.swift in Sources */,
 				403535921EAE6C2A003F21DF /* Constants.swift in Sources */,
+				34379867280DDD0E00F21D2D /* PlotModel.swift in Sources */,
 				40C45FDE1F809CB9007F0598 /* MetaWearExtenstions.swift in Sources */,
 				40E9FF201ECE0E1000A2E75D /* StreamTableViewController.swift in Sources */,
 				408DCA6C2007498C00518100 /* SensorConfig.swift in Sources */,
@@ -983,13 +991,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S2273LZ6GL;
+				DEVELOPMENT_TEAM = FJCERUY4EM;
 				INFOPLIST_FILE = MetaBase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 4.4.3;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mbientlab.MetaBase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mechmedi.MechBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1009,13 +1017,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S2273LZ6GL;
+				DEVELOPMENT_TEAM = FJCERUY4EM;
 				INFOPLIST_FILE = MetaBase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 4.4.3;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mbientlab.MetaBase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mechmedi.MechBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
